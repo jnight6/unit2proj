@@ -55,6 +55,7 @@ function addThing(event) {
 	thing.name = name;
 	thing.powerLevel = powerLevel;
 	thing.description = description;
+	thing.uniqueProperty = uniqueProperty;
 	thing.category = category;
 	if (imageInput.files[0]) {
 		const reader = new FileReader();
