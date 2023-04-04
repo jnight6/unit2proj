@@ -134,6 +134,7 @@ function renderThing(thing) {
 	deleteButton.textContent = 'Delete';
 	deleteButton.addEventListener('click', () => deleteThing(thing));
 
+	cardBody.appendChild(image);
 	cardBody.appendChild(userName);
 	cardBody.appendChild(title);
 	cardBody.appendChild(subtitle);
@@ -143,7 +144,6 @@ function renderThing(thing) {
 	cardBody.appendChild(editButton);
 	cardBody.appendChild(deleteButton);
 
-	card.appendChild(image);
 	card.appendChild(cardBody);
 
 	if (editingThing && editingThing.id === thing.id) {
