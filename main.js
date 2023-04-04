@@ -61,17 +61,30 @@ function addThing(event) {
 		reader.addEventListener('load', () => {
 			thing.image = reader.result;
 			localStorage.setItem('things', JSON.stringify(things));
-			renderThing(thing);
+			if (editingThing) {
+				// Reload the page if editing an existing thing
+				location.reload();
+			} else {
+				// Render the new thing if creating a new one
+				renderThing(thing);
+			}
 		});
 		reader.readAsDataURL(imageInput.files[0]);
 	} else {
 		localStorage.setItem('things', JSON.stringify(things));
-		renderThing(thing);
+		if (editingThing) {
+			// Reload the page if editing an existing thing
+			location.reload();
+		} else {
+			// Render the new thing if creating a new one
+			renderThing(thing);
+		}
 	}
 
 	editingThing = null;
 	document.getElementById('add-form').reset();
 }
+
 
 
 function renderThing(thing) {
