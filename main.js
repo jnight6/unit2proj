@@ -19,16 +19,8 @@ function addThing(event) {
     const imageInput = document.getElementById('image-input');
     const category = document.getElementById('category').value.trim();
 
-    if (
-        !name ||
-        !description ||
-        isNaN(powerLevel) ||
-        !uniqueProperty ||
-        !userName
-    ) {
-        console.log(
-            'Invalid input. Please enter all properties with appropriate validation.',
-        );
+    if (!name || !description || isNaN(powerLevel) || !uniqueProperty || !userName) {
+        console.log('Invalid input. Please enter all properties with appropriate validation.',);
         return;
     }
 
@@ -170,21 +162,11 @@ function editThing(thing) {
         const name = document.getElementById('name').value.trim();
         const powerLevel = document.getElementById('power-level').value.trim();
         const description = document.getElementById('description').value.trim();
-        const uniqueProperty = document
-            .getElementById('unique-property')
-            .value.trim();
+        const uniqueProperty = document.getElementById('unique-property').value.trim();
         const category = document.getElementById('category').value.trim();
 
-        if (
-            !name ||
-            !description ||
-            isNaN(powerLevel) ||
-            !uniqueProperty ||
-            !userName
-        ) {
-            console.log(
-                'Invalid input. Please enter all properties with appropriate validation.',
-            );
+        if (!name || !description || isNaN(powerLevel) || !uniqueProperty || !userName) {
+            console.log('Invalid input. Please enter all properties with appropriate validation.',);
             return;
         }
 
