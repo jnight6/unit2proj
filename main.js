@@ -215,7 +215,7 @@ function editThing(thing) {
     cancelButton.textContent = 'Cancel';
     cancelButton.addEventListener('click', () => {
         editingThing = null;
-        renderThing(thing);
+        location.reload();
     });
 
     cardBody.appendChild(saveButton);
