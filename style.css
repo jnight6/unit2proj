@@ -1,0 +1,110 @@
+body{
+    background:#dce1eb ;
+    background-image: url("fon2.jpeg");
+    background-size: cover;
+}
+#add-form {
+    float: left;
+    width: 30%;
+    margin-right: 30px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #98cdcc;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #a7a7a7;
+}
+
+.form-text {
+    color: #a7a7a7;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+select.form-control {
+    height: auto;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #98cdcc;
+    border-color: #98cdcc;
+}
+
+.btn-primary:hover {
+    background-color: #6c8e8d;
+    border-color: #6c8e8d;
+}
+
+
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    /*background: #ECEFF4;*/
+    width: 32%;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #a7a7a7;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.delete-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: transparent;
+    border: none;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #6c8e8d;
+}
